@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root "books#index"
+  # root "books#index"
 
   get "static_pages/home"
   get "static_pages/help"
+  resources :books
+  resources :borrow
 end
