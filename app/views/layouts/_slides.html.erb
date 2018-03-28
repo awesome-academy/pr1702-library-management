@@ -1,29 +1,33 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-  <li data-target="#myCarousel" data-slide-to="1"></li>
-  <li data-target="#myCarousel" data-slide-to="2"></li>
-</ol>
-<!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-  <div class="item active">
-    <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2018/img/Books/XCM_1099033_Manual_1500x300_1099033_us_books_mar2018_vib_18_1500x300_jpg_Mar2018_VIB.jpg">
-  </div>
-  <div class="item">
-    <img src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2018/TPR/FebruaryBiscuit2/VX-1487-TPR_Biscuit2_Black_GW-Hero-Desktop-1500x300-1X._CB487343090_.jpg">
-  </div>
-  <div class="item">
-    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2018/EDITORIAL/SPRING_1/GATEWAY/DESKTOP/HERO_M_S_SpringBoots_1x._CB487353696_.jpg">
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2018/img/Books/XCM_1099033_Manual_1500x300_1099033_us_books_mar2018_vib_18_1500x300_jpg_Mar2018_VIB.jpg">
+      </div>
+      <div class="item">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2018/TPR/FebruaryBiscuit2/VX-1487-TPR_Biscuit2_Black_GW-Hero-Desktop-1500x300-1X._CB487343090_.jpg">
+      </div>
+      <div class="item">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2018/EDITORIAL/SPRING_1/GATEWAY/DESKTOP/HERO_M_S_SpringBoots_1x._CB487353696_.jpg">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only"><%= t ".previous" %></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only"><%= t ".next" %></span>
+    </a>
   </div>
 </div>
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only"><%= t ".previous" %></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only"><%= t ".next" %></span>
-  </a>
-</div> 

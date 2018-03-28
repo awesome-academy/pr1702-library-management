@@ -1,13 +1,8 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <div class="navbar-brand"><span class="glyphicon glyphicon-book"></span><%= link_to "  Library Management", '#', id: "logo" %></div>
-    </div> 
+      <div class="navbar-brand"><%= link_to t(".library"), root_path, class:"glyphicon glyphicon-book", id: "logo" %></div>
+    </div>
     <form class="navbar-form navbar-left" action="#">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Nhập tên sách, tuyển tập, tác giả,...">
@@ -17,32 +12,44 @@
       </button>
       </div>
       </div>
-    </form> 
+    </form>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to t(".home"), root_path, class:"glyphicon glyphicon-home" %></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t ".categories" %><span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"> 
-            <li role="presentation" class="dropdown-header"><%= t ".audio_book" %></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".story" %></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".self_growth" %></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".business_secret" %></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".seed_soul" %></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".children's_story"%></a></li>
+          <a class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" href="#">
+            <%= t ".categories" %><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation" class="dropdown-header">
+              <%= link_to t(".audio_book"), "#" %>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              <%= link_to t(".story"),"#" %></a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              <%= link_to t(".life_skill"),"#" %></a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              <%= link_to t(".children's_story"), "#" %></a>
+            </li>
             <li role="presentation" class="divider"></li>
-            <li role="presentation" class="dropdown-header"><%= t ".business"%></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".startup"%></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".sales_marketing"%></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".leadership_manager"%></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".finance_invest"%></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".economic_knowledge"%></a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".general_business" %></a></li>
-            
+            <li role="presentation" class="dropdown-header">
+              <%= link_to t(".business"), "#" %>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              <%= link_to t(".startup"), "#" %></a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              <%= link_to t(".sales_marketing"), "#" %></a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              <%= link_to t(".leadership_manager"), "#" %></a>
+            </li>
           </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> <%= t ".signup" %></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span><%= t ".login" %></a></li>
+        <li><%= link_to t(".signup"), "#", class:"glyphicon glyphicon-user" %></li>
+        <li><%= link_to t(".login"), "#", class:"glyphicon glyphicon-log-in" %></li>
       </ul>
     </nav>
   </div>

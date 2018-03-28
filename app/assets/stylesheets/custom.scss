@@ -1,42 +1,86 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'colors';
 
 /* header */
+.navbar-brand {
+  float: left;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+
 .navbar-inverse {
-  background-color: #fff;
-  border-color: #2cc8c8;;
+  background-color: $white;
+  border-color: $iron;
 }
+
 .navbar-form .input-group > .form-control {
-    width: 250%;
+  width: 200%;
+  margin-left: 100px;
 }
+
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
   z-index: 2;
-  margin-left: 256px;
+  margin-left: 396px;
 }
+
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #42a3ae;
+  color: $midnight-blue;
   background-color: transparent;
 }
 
-/* pagination */
+#logo {
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  padding-top: 0px;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+p {
+  text-align: justify;
+}
+
 .pagination {
   float: center;
 }
-    
-/* footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
-small {
+
+#footer {
+  background-color: $gray;
+  margin-top: 20px;
+  padding-top: 20px;
+
+  small {
     float: left;
   }
+
   ul {
     float: right;
     list-style: none;
+
     li {
       float: left;
-      margin-left: 35px;
+      margin-left: 55px;
     }
   }
 }
+
+#sidenav {
+  background-color: $white;
+}
+

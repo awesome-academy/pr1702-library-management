@@ -13,7 +13,17 @@ Book.create!(name:  "Tôi là gay",
              publisher_id: "1",
              description: "Lúc viết cuốn sách này, tôi nghĩ tới luật nhân quả. Bụt dạy, có nhân ắt có quả, muốn không quả thì đừng có nhân. Nhưng trời ơi, làm sao mà bứt hết được những quả Đớn Đau, Tăm Tối nếu người ta cứ vãi mầm thành kiến và kỳ thị lên đầu người đồng tính...",
              author_id: "1")
-
-10.times do |n|
-	Category.create name: "category number #{n + 1}"
-end
+Author.create!(name: 'Dale Carnegie',
+               description: 'Dale Carnegie')
+# Category
+Category.create!(name: 'Kỹ năng sống')
+# Publisher
+Publisher.create!(name: 'NXB Thanh Niên')
+# Book
+Book.create!(name: 'Bậc thầy của nghệ thuật giao tiếp',
+            page: '330',
+            author_id: 2,
+            image: 'https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/17289.jpg',
+            category_id: 2,
+            publisher_id: 2,
+            description: 'Dale Carnegie là bậc thầy nhân sinh vĩ đại của thế kỷ XX.')

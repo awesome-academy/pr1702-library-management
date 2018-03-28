@@ -1,2 +1,0 @@
-class AuthorBook < ApplicationRecord
-end

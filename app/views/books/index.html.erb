@@ -1,23 +1,19 @@
-<% provide :title, t(".all_books") %>
-<%= render 'layouts/slides' %>
-<div class="container-fluid bg-3 text-center">    
-  <h3><%= t ".list" %></h3><br>
-  <% @books.each do |book| %>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <%= image_tag book.image %>
-        <br>
-        <p><%= book.name %></p>
-        <p><%= link_to book.author.name %></p>
-        <button class="btn btn-success"><%= t ".detail" %></button>
-      </div>
-    </div>
-  </div>
-  <ul class="pager">
-    <li><a href="#"><%= t ".previous" %></a></li>
-    <li><a href="#"><%= t ".next" %></a></li>
-  </ul> 
-</div>
-<% end %><br><br>
+<% provide :title, t(".list") %>
 
+<%= render "layouts/slides" %>
+<div class="container-fluid text-center">
+  <h3><%= t ".list" %></h3>
+  <div class="row">
+    <% @books.each do |book| %>
+      <div class="col-md-2">
+        <div class="thumbnail">
+          <%= image_tag book.image %>
+          <h5><%= book.name %></h5>
+          <h5><%= link_to book.author.name %></h5>
+          <%= link_to t(".detail"), book %>
+        </div>
+      </div>
+    <% end %>
+    <%= will_paginate @books %>
+  </div>
+</div>

@@ -1,13 +1,10 @@
-<footer class="footer">
-  <small>
-    Copyright @ 2018
-    by <a href="#">TeamOne</a>
-  </small>
+<footer class="container-fluid" id="footer">
+  <small><%= t ".copyright" %></small>
   <nav>
     <ul>
-      <li><%= link_to "About",   '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
-      <li><a href="#">News</a></li>
+      <li><%= link_to t(".about"), "#" %></li>
+      <li><%= link_to t(".contact"), "#" %></li>
+      <li><%= link_to t(".news"), "#" %></li>
     </ul>
   </nav>
 </footer>

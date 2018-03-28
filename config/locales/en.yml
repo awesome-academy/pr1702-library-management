@@ -1,27 +1,39 @@
 en:
   layouts:
     header:
-      login: "Login"
-      signup: "Sign up"
+      library: "Library"
+      login: " Login"
+      signup: " Signup"
+      home: " Home"
+      categories: "Categories"
+    footer:
+      about: "About"
+      contact: "Contact"
+      copyright: "@ Copyright by TeamOne"
+      news: "News"
+  button:
+    summit: "Submit"
   categories:
     audio_book: "Audio Book"
     business: "Business"
-    business_secret: "Business Secret"
     children's_story: "Children's Story"
-    economic_knowledge: "Economic Knowledge"
-    finance_invest: "Finace Invest"
-    general_business: "General Business"
     leadership_manager: "Leadership Manager"
     sales_marketing: "Sales Marketing"
-    seed_soul: "Seed For The Soul"
-    self_growth: "Self Growth"
+    life_skill: "Life Skills"
     startup: "StartUp"
     story: "Story"
   books:
     index:
       all_books: "All books"
-      detail: "Detail"
-      list: "List Book"
+      detail: "DETAILS"
+      list: "List Books"
       next: "Next"
       previous: "Previous"
-      
+    show:
+      author: "Author"
+      category: "Category"
+      publisher: "Publisher"
+      comment: "Leave a comment"
+      request: "REQUEST"
+      invite_read: "Welcome you to read"
+
