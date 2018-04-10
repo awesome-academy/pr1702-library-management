@@ -73,7 +73,7 @@ p {
 
 #footer {
   background-color: $gray;
-  margin-top: 20px;
+  margin-top: 60px;
   padding-top: 20px;
 
   small {
@@ -164,4 +164,41 @@ aside {
 
 #show_user{
   margin-bottom: 100px;
+}
+
+.row.content {
+  height: 550px;
+}
+
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 15%;
+}
+
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;}
+}
+
+#management {
+  margin-top: 100px;
+}
+
+.dashboard {
+  width: 85%;
+}
+/* Admin */
+#admin-image-book {
+  border: 1px solid #ccc;
+  float: left;
+  margin: 5px;
+  width: 80px;
+}
+.table-title {
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.add-book {
+  float: right;
 }
