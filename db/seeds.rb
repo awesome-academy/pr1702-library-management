@@ -26,4 +26,4 @@ Book.create!(name: 'Bậc thầy của nghệ thuật giao tiếp',
             image: 'https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/17289.jpg',
             category_id: 2,
             publisher_id: 2,
-            description: 'Dale Carnegie là bậc thầy nhân sinh vĩ đại của thế kỷ XX.')
+            description: 'Dale Carnegie là bậc thầy nhân sinh vĩ đại của thế kỷ XX. Nửa thế kỷ trở lại đây, danh tiếng của ông ngày càng được nhiều người biết đến.')

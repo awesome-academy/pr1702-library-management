@@ -1,25 +1,34 @@
 en:
+  flash:
+    danger: "Invalid email/password combination"
+    success: "Welcome to the Library!"
   layouts:
     header:
+      account: "Account"
+      categories: "Categories"
+      home: " Home"
       library: "Library"
       login: " Login"
+      logout: "Logout"
+      profile: "Profile"
+      setting: "Settings"
       signup: " Signup"
-      home: " Home"
-      categories: "Categories"
     footer:
       about: "About"
       contact: "Contact"
       copyright: "@ Copyright by TeamOne"
       news: "News"
+    application:
+      title: "Library Management"
   button:
-    summit: "Submit"
+    submit: "Submit"
   categories:
     audio_book: "Audio Book"
     business: "Business"
     children's_story: "Children's Story"
     leadership_manager: "Leadership Manager"
-    sales_marketing: "Sales Marketing"
     life_skill: "Life Skills"
+    sales_marketing: "Sales Marketing"
     startup: "StartUp"
     story: "Story"
   books:
@@ -32,8 +41,15 @@ en:
     show:
       author: "Author"
       category: "Category"
-      publisher: "Publisher"
       comment: "Leave a comment"
-      request: "REQUEST"
       invite_read: "Welcome you to read"
+      publisher: "Publisher"
+      request: "REQUEST"
+  users:
+    new:
+      create: "Create my account!"
+      signup: "Signup"
+  sessions:
+    new:
+      login: "Login"
 
