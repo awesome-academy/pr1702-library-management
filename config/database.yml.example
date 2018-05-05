@@ -1,0 +1,24 @@
+common: &common
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  host: <%= ENV["HOST_NAME"] %>
+  username: <%= ENV["USERNAME"] %>
+  password: <%= ENV["PASSWORD"] %>
+
+development:
+  <<: *common
+  database: <%= ENV["LIBRARY_MANAGEMENT_DEV"] %>
+
+test:
+  <<: *common
+  database: <%= ENV["LIBRARY_MANAGEMENT_TEST"] %>
+
+staging:
+  <<: *common
+  database: <%= ENV["LIBRARY_MANAGEMENT_STG"] %>
+
+production:
+  <<: *common
+  database: <%= ENV["LIBRARY_MANAGEMENT_PROD"] %>

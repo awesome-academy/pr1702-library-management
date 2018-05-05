@@ -1,39 +1,128 @@
 en:
+  flash:
+    danger: "Invalid email/password combination"
+    success: "Welcome to the Library!"
+    book_create: "Book create!"
+    login: "Please login!"
+    delete_user: "User deleted!"
+    request_success: "Request success!"
+    reject: "Reject complete!"
+    book_nil: "Not found book!"
   layouts:
     header:
+      account: "Account"
+      book_request: "Book Request"
+      categories: "Categories"
+      home: " Home"
       library: "Library"
       login: " Login"
+      logout: "Logout"
+      profile: "Profile"
+      setting: "Settings"
       signup: " Signup"
-      home: " Home"
-      categories: "Categories"
+      user: "Users"
     footer:
       about: "About"
       contact: "Contact"
       copyright: "@ Copyright by TeamOne"
       news: "News"
+    application:
+      title: "Library Management"
+    sidenav:
+      management: "Management"
+      dashboard: "Dashboard"
+      request: "Requests"
+      user: "Users"
+      book: "Books"
+      author: "Authors"
   button:
-    summit: "Submit"
+    submit: "Submit"
   categories:
     audio_book: "Audio Book"
     business: "Business"
     children's_story: "Children's Story"
     leadership_manager: "Leadership Manager"
-    sales_marketing: "Sales Marketing"
     life_skill: "Life Skills"
+    sales_marketing: "Sales Marketing"
     startup: "StartUp"
     story: "Story"
+  admin:
+    title: "Admin management"
+    books:
+      book:
+        add: "Add"
+        all_books: "All books"
+        category: "Category"
+        description: "Description"
+        id: "Id"
+        image: "Image"
+        page: "Page"
+        publisher: "Publisher"
+        title: "Title"
+      create-book:
+        add_new: "Add a new book"
+        create: "Create"
+      index:
+        all_books: "All books"
+        category: "Category"
+        description: "Description"
+        id: "Id"
+        image: "Image"
+        list: "List books"
+        page: "Page"
+        publisher: "Publisher"
+        title: "Title"
+      new:
+        submit: "Submit"
+        add_book: "Add a new book"
+        cancel: "Cancel"
+    borrows:
+      request:
+        action: "Action"
+        all_request: "All Book Requests"
+        book: "Book"
+        confirm: "Are you sure?"
+        date: "Return date"
+        destroy: "Reject"
+        id: "Id"
+        name: "Username"
+        status: "Status"
+      accepted:
+        accepted: "Accept"
+      discard:
+        discard: "Discard"
+      index:
+        request: "Book Requests"
+      update:
+        update_success: "Update successfully!"
   books:
     index:
       all_books: "All books"
       detail: "DETAILS"
-      list: "List Books"
+      list: "List books"
       next: "Next"
       previous: "Previous"
     show:
       author: "Author"
       category: "Category"
-      publisher: "Publisher"
       comment: "Leave a comment"
-      request: "REQUEST"
       invite_read: "Welcome you to read"
-
+      publisher: "Publisher"
+      request: "REQUEST"
+    request_book:
+      close: "Close"
+      request: "Request"
+      return: "Enter Date Return Book"
+      save: "Save"
+  users:
+    new:
+      create: "Create my account!"
+      signup: "Signup"
+  sessions:
+    new:
+      login: "Login"
+  borrows:
+    request:
+      return: "Return"
+    index:
+      request: "Book Requests"

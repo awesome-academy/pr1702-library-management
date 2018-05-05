@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
   root "books#index"
 
-  get "static_pages/home"
-  get "static_pages/help"
+  get "/signup", to: "users#new"
+  post "/signup", to: "users#create"
+  get "/login", to: "sessions#new"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+
+  namespace :admin do
+    resources :books
+    resources :borrows
+  end
   resources :books
+  resources :users
+  resources :authors
+  resources :borrows
 end

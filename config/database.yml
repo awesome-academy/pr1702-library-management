@@ -9,16 +9,16 @@ common: &common
 
 development:
   <<: *common
-  database: lirary_development
+  database: library_development
 
 test:
   <<: *common
-  database: lirary_test
+  database: library_test
 
 staging:
   <<: *common
-  database: lirary_staging
+  database: library_staging
 
 production:
   <<: *common
-  database: lirary
+  database: library
